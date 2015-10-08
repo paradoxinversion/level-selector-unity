@@ -4,11 +4,12 @@ using System.Collections;
 
 public class LSObject : MonoBehaviour{
     public int unitySceneIndex;
-    public int levelDisplayIndex;
+    public string levelDisplayIndex;
     public string levelName;
     public string levelDescription;
 
-    public Image mainImage;
+    public Image levelImageHolder;
+    public Sprite levelSprite;
 
     public Text levelNameText;
     public Text levelIndexText;
@@ -28,15 +29,20 @@ public class LSObject : MonoBehaviour{
             {
                 levelDescriptionText.text = levelDescription;
             }
-            
         }
-        if (levelDisplayIndex > -1)
+        if (!string.IsNullOrEmpty(levelDisplayIndex))
         {
             if (levelIndexText != null)
             {
                 levelIndexText.text = levelDisplayIndex.ToString();
             }
-            
+        }
+        if (levelSprite != null)
+        {
+            if (levelImageHolder != null)
+            {
+                levelImageHolder.sprite = levelSprite;
+            }
         }
     }
 

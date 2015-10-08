@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 497569e3fd3d5df499d021ac17bbfdd9
-timeCreated: 1443806247
+timeCreated: 1444330186
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - levelImageHolder: {fileID: 11470930, guid: 30d455d8fd3df364fa1302115889f419, type: 2}
+  - levelSprite: {instanceID: 0}
+  - levelNameText: {fileID: 11478902, guid: 30d455d8fd3df364fa1302115889f419, type: 2}
+  - levelIndexText: {fileID: 11497696, guid: 30d455d8fd3df364fa1302115889f419, type: 2}
+  - levelDescriptionText: {fileID: 11402032, guid: 30d455d8fd3df364fa1302115889f419,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
